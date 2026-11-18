@@ -1,0 +1,56 @@
+{
+  "project_name": "Benchmark_CG_RPi3_Raylib_vs_Godot35",
+  "display": {
+    "width": 800,
+    "height": 480,
+    "fullscreen": false,
+    "vsync": false,
+    "target_fps": 0
+  },
+  "camera": {
+    "orbit_radius": 28.0,
+    "orbit_height": 12.0,
+    "angular_velocity_rad_s": 0.45,
+    "fov_degrees": 60.0,
+    "near_plane": 0.1,
+    "far_plane": 200.0
+  },
+  "lighting_lambert": {
+    "light_direction": [-0.57735, -0.57735, -0.57735],
+    "kd_diffuse": 0.85,
+    "ka_ambient": 0.15,
+    "base_color_rgb": [0.25, 0.55, 0.90]
+  },
+  "orbit_layout": {
+    "base_radius": 3.5,
+    "radius_step": 0.22,
+    "base_orbital_speed": 1.2,
+    "speed_decay": 0.012,
+    "self_rotation_speed": 0.8
+  },
+  "protocol": {
+    "warmup_seconds": 3.0,
+    "sample_duration_seconds": 15.0,
+    "rss_sample_interval_frames": 30
+  },
+  "modes": {
+    "mesh_density": {
+      "description": "1 planeta central escalando a densidade da malha (Isola VBO / GPU Vertex Throughput)",
+      "stages": [
+        { "stage_id": "MD_500",   "total_triangles": 500,   "planet_count": 1, "mesh_file": "planet_500.obj" },
+        { "stage_id": "MD_2500",  "total_triangles": 2500,  "planet_count": 1, "mesh_file": "planet_2500.obj" },
+        { "stage_id": "MD_10000", "total_triangles": 10000, "planet_count": 1, "mesh_file": "planet_10000.obj" },
+        { "stage_id": "MD_40000", "total_triangles": 40000, "planet_count": 1, "mesh_file": "planet_40000.obj" }
+      ]
+    },
+    "planet_count": {
+      "description": "Multiplos planetas de 500 triangulos em orbita (Isola CPU NEON MVP / Scene Tree / Draw Calls)",
+      "stages": [
+        { "stage_id": "PC_500",   "total_triangles": 500,   "planet_count": 1,  "mesh_file": "planet_500.obj" },
+        { "stage_id": "PC_2500",  "total_triangles": 2500,  "planet_count": 5,  "mesh_file": "planet_500.obj" },
+        { "stage_id": "PC_10000", "total_triangles": 10000, "planet_count": 20, "mesh_file": "planet_500.obj" },
+        { "stage_id": "PC_40000", "total_triangles": 40000, "planet_count": 80, "mesh_file": "planet_500.obj" }
+      ]
+    }
+  }
+}
