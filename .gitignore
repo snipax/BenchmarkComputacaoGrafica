@@ -1,0 +1,9 @@
+# Pastas de build e IDE (vale para pilha_a, pilha_b e subpastas)
+out/
+build/
+bin/
+x64/
+.vs/
+
+# Cache do Python (para o script em shared/)
+__pycache__/
