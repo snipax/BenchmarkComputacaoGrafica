@@ -1,0 +1,29 @@
+% Tabela gerada automaticamente por analysis/process_results.py
+% Requer \usepackage{booktabs} no preambulo do Overleaf
+\begin{table*}[t]
+\centering
+\caption{Resultados Comparativos de Desempenho: Pilha A (C++/Raylib + VBO + ARM NEON) vs. Pilha B (Godot 3.5 GLES2)}
+\label{tab:resultados_benchmark}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+\textbf{Cenário} & \textbf{Pilha} & \textbf{Planetas} & \textbf{FPS Médio} & \textbf{$T_{\text{quadro}}$ ($\mu \pm \sigma$) [ms]} & \textbf{$P_{99}$ [ms]} & \textbf{Jitter [ms]} & \textbf{RSS [MB]} \\
+\midrule
+MD\_500 & Pilha B (Godot 3.5) & 1 & 16.36 & 61.139 $\pm$ 96.171 & 239.304 & 104.405 & 142.73 \\
+MD\_500 & Pilha A (Raylib) & 1 & 16.38 & 61.054 $\pm$ 87.972 & 211.450 & 102.832 & 85.59 \\
+MD\_2500 & Pilha B (Godot 3.5) & 1 & 16.10 & 62.111 $\pm$ 96.537 & 240.213 & 105.829 & 142.78 \\
+MD\_2500 & Pilha A (Raylib) & 1 & 16.33 & 61.221 $\pm$ 88.060 & 211.554 & 104.373 & 85.59 \\
+MD\_10000 & Pilha B (Godot 3.5) & 1 & 15.96 & 62.638 $\pm$ 97.329 & 240.946 & 107.251 & 142.79 \\
+MD\_10000 & Pilha A (Raylib) & 1 & 15.69 & 63.727 $\pm$ 87.912 & 211.177 & 100.515 & 85.59 \\
+MD\_40000 & Pilha B (Godot 3.5) & 1 & 14.93 & 66.968 $\pm$ 97.633 & 237.691 & 112.491 & 142.80 \\
+MD\_40000 & Pilha A (Raylib) & 1 & 15.96 & 62.656 $\pm$ 80.638 & 200.523 & 91.233 & 85.59 \\
+PC\_500 & Pilha B (Godot 3.5) & 1 & 15.99 & 62.540 $\pm$ 96.815 & 241.808 & 106.769 & 142.81 \\
+PC\_500 & Pilha A (Raylib) & 1 & 16.37 & 61.079 $\pm$ 87.999 & 212.105 & 102.878 & 85.59 \\
+PC\_2500 & Pilha B (Godot 3.5) & 5 & 12.54 & 79.721 $\pm$ 100.926 & 255.802 & 116.000 & 142.81 \\
+PC\_2500 & Pilha A (Raylib) & 5 & 16.31 & 61.322 $\pm$ 87.743 & 211.038 & 102.662 & 85.59 \\
+PC\_10000 & Pilha B (Godot 3.5) & 20 & 8.20 & 122.009 $\pm$ 91.282 & 286.397 & 107.445 & 142.81 \\
+PC\_10000 & Pilha A (Raylib) & 20 & 15.28 & 65.437 $\pm$ 88.237 & 211.940 & 96.583 & 85.59 \\
+PC\_40000 & Pilha B (Godot 3.5) & 80 & 3.44 & 290.602 $\pm$ 63.673 & 440.380 & 74.192 & 142.98 \\
+PC\_40000 & Pilha A (Raylib) & 80 & 14.50 & 68.957 $\pm$ 84.265 & 215.102 & 94.374 & 85.59 \\
+\bottomrule
+\end{tabular}
+\end{table*}
