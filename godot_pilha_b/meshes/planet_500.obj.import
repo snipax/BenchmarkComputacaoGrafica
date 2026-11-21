@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/planet_500.obj-e998e935fe718c3f41ded72cc8e14d01.mesh"
+
+[deps]
+
+files=[ "res://.import/planet_500.obj-e998e935fe718c3f41ded72cc8e14d01.mesh" ]
+
+source_file="res://meshes/planet_500.obj"
+dest_files=[ "res://.import/planet_500.obj-e998e935fe718c3f41ded72cc8e14d01.mesh", "res://.import/planet_500.obj-e998e935fe718c3f41ded72cc8e14d01.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

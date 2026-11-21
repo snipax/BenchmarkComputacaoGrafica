@@ -1,0 +1,25 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Pilha B - Godot 3.5 (GLES2 + Spatial Nodes) - Benchmark CG"
+run/main_scene="res://MainBenchmark.tscn"
+
+[display]
+
+window/size/width=800
+window/size/height=480
+window/vsync/use_vsync=false
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+environment/default_clear_color=Color( 0.0392157, 0.0470588, 0.0862745, 1 )

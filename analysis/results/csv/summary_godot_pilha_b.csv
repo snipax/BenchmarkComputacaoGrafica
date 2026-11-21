@@ -1,0 +1,9 @@
+engine,mode,stage_id,planets,triangles,frames,avg_fps,mean_frame_ms,stddev_frame_ms,p99_frame_ms,mean_jitter_ms,max_jitter_ms,peak_rss_mb
+Godot_Pilha_B,mesh_density,MD_500,1,500,43385,2892.2610,0.3458,0.1256,0.8130,0.0888,1.0770,73.6823
+Godot_Pilha_B,mesh_density,MD_2500,1,2500,44497,2966.4661,0.3371,0.1114,0.7410,0.0840,0.8890,75.6917
+Godot_Pilha_B,mesh_density,MD_10000,1,10000,44732,2982.0618,0.3353,0.1111,0.7420,0.0849,1.0480,75.9112
+Godot_Pilha_B,mesh_density,MD_40000,1,40000,43350,2889.9931,0.3460,0.1261,0.8080,0.0891,0.9460,73.6325
+Godot_Pilha_B,planet_count,PC_500,1,500,44096,2939.7314,0.3402,0.1160,0.7580,0.0874,1.1480,75.3145
+Godot_Pilha_B,planet_count,PC_2500,5,2500,43476,2898.3855,0.3450,0.1153,0.7630,0.0846,0.9120,73.7829
+Godot_Pilha_B,planet_count,PC_10000,20,10000,40545,2702.9654,0.3700,0.1326,0.8650,0.0788,1.0890,71.1588
+Godot_Pilha_B,planet_count,PC_40000,80,40000,31495,2099.6136,0.4763,0.1221,0.8840,0.0669,0.7050,63.1100
